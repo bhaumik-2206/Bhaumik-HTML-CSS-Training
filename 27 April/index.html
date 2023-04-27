@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    <title>Web Page</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(59, 105, 123);
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+        .main {
+            height: 100vh;
+            width: 100%;
+            background-image: url(cricket.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .nav {
+            text-align: center;
+            background-color: rgb(0, 0, 0, 0.2);
+            height: 15%;
+        }
+
+        li {
+            padding: 30px 40px;
+            display: inline-block;
+            font-size: 25px;
+            list-style-type: none;
+        }
+
+        .navlink {
+            text-decoration: none;
+            color: white;
+            margin-top: 30px;
+        }
+
+        .navlink:hover {
+            color: rgb(18, 117, 198);
+            transition: 1s ease;
+        }
+
+        main {
+            font-size: 50px;
+            text-align: center;
+            color: #4CAF50;
+        }
+
+        .heading {
+            height: 85%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-bottom: 300px;
+            font-size: 40px;
+            color: rgb(235, 80, 255);
+            letter-spacing: 5px;
+            word-spacing: 5px;
+        }
+
+        #iplteams {
+            transition: 1s ease;
+        }
+
+        .teams {
+            display: flex;
+        }
+
+        .team {
+            font-size: 20px;
+            height: auto;
+            width: 327px;
+            margin: 30px;
+            text-align: center;
+            padding-left: 10px;
+        }
+
+        .teams img {
+            width: 300px;
+            margin-bottom: 20px;
+        }
+
+        .teamname {
+            color: white;
+            background-color: red;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 40px;
+            font-size: 30px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .teamname:hover {
+            background-color: transparent;
+            color: black;
+            transition: 1s ease;
+            border: 2px solid red;
+        }
+
+        .team .csk {
+            width: 230px;
+        }
+
+        .team .kkr {
+            width: 123px;
+        }
+
+        .team .gt {
+            width: 258px;
+        }
+
+        .team .dc {
+            width: 240px;
+        }
+
+        .team .rcb {
+            width: 180px;
+        }
+
+        .team .pbks {
+            width: 210px;
+        }
+
+        .team .rr {
+            width: 300px;
+        }
+
+        .lives{
+            text-align: center;
+            margin-bottom: 50px;
+            margin-top: 20px;
+        }
+
+        .cricbuzz{
+            padding: 20px;
+            color: white;
+            background-color: red;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 40px;
+            font-size: 30px;
+            text-decoration: none;
+            color: white; 
+        }
+
+        .cricbuzz:hover {
+            background-color: transparent;
+            color: black;
+            transition: 1s ease;
+            border: 2px solid red;
+        }
+
+        .player .rohit{
+            width:250px;
+        }
+        .player .virat{
+            width:350px;
+        }
+        .player .dhoni{
+            width: 370px;
+        }
+        .player .hardik{
+            width: 250px;
+        }
+
+        .players {
+            background-color: lightcoral;
+            display: flex;
+        }
+
+        .player {
+            font-size: 20px;
+            height: auto;
+            width: 327px;
+            margin: 30px;
+            text-align: center;
+            padding-left: 10px;
+        }
+
+        .players img {
+            width: 300px;
+            margin-bottom: 20px;
+        }
+
+        .playername {
+            color: white;
+            background-color: red;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 40px;
+            font-size: 30px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .playername:hover {
+            background-color: transparent;
+            color: black;
+            transition: 1s ease;
+            border: 2px solid red;
+        }
+
+        .player .warner{
+            width: 250px;
+        }
+
+        .player .gayle{
+            width: 250px;
+        }
+
+        .player .rabada{
+            width: 250px;
+        }
+
+        .player .morgan{
+            width: 250px;
+        }
+
+        .playertitle{
+            background-color: rgb(205, 53, 53);
+            text-align: center;
+            height: 60px;
+            font-size: 40px;
+            padding: 5px 0;
+        }
+
+        footer {
+            background-color: rgb(30, 29, 49);
+            color: rgb(96, 85, 85);
+            text-align: center;
+            height: 80px;
+        }
+
+        footer h2 {
+            padding-top: 13px;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="main">
+        <nav class="nav">
+            <li><a class="navlink" href="#">Home</a></li>
+            <li><a class="navlink" href="#iplteams">Teams</a></li>
+            <li><a class="navlink" href="#livescore">Live Score</a></li>
+            <li><a class="navlink" href="#players">Players</a></li>
+        </nav>
+
+        <div class="heading">
+            <img src="XYiv.gif" alt="">
+            <h1>Let's Play Cricket</h1>
+            <img src="XYiv.gif" alt="">
+        </div>
+    </div>
+
+
+    <main id="iplteams">
+        <h2>IPL Teams</h2>
+    </main>
+
+    <div class="teams" id="teams">
+        <div class="team">
+            <img src="mi.png" alt="">
+            <a class="teamname" href="https://www.mumbaiindians.com/" target="_blank">Mumbai Indians</a>
+        </div>
+
+        <div class="team">
+            <img class="csk" src="csk.webp" alt="">
+            <a class="teamname" href="https://www.chennaisuperkings.com/" target="_blank">CSK</a>
+        </div>
+
+        <div class="team">
+            <img class="kkr" src="kkr.webp" alt=""><br>
+            <a class="teamname" href="https://www.kkr.in/" target="_blank">KKR</a>
+        </div>
+
+        <div class="team">
+            <img class="gt" src="gt.webp" alt="">
+            <a class="teamname" href="https://www.gujarattitansipl.com/" target="_blank">Gujarat Titans</a>
+        </div>
+    </div>
+
+    <div class="teams" id="teams">
+        <div class="team">
+            <img class="dc" src="dc.webp" alt="">
+            <a class="teamname" href="https://www.delhicapitals.in/" target="_blank">Delhi Capitals</a>
+        </div>
+
+        <div class="team">
+            <img class="rcb" src="rcb.webp" alt=""><br>
+            <a class="teamname" href="https://www.royalchallengers.com/" target="_blank">RCB</a>
+        </div>
+
+        <div class="team">
+            <img class="pbks" src="pbks.webp" alt="">
+            <a class="teamname" href="https://www.punjabkingsipl.in/" target="_blank">PBKS</a>
+        </div>
+
+        <div class="team">
+            <img class="rr" src="rr.png" alt="">
+            <a class="teamname" href="https://www.rajasthanroyals.com/" target="_blank">Rajasthan Royals</a>
+        </div>
+    </div>
+
+    <div class="lives" id="livescore">
+        <a class="cricbuzz" href="https://www.cricbuzz.com/" target="_blank">Show Live Score</a>
+    </div>
+
+
+
+
+
+    <div id="players">
+        <h2 class="playertitle">Best Indian Players</h2>
+        <div class="players" id="teams">
+            <div class="player">
+                <img class="rohit" src="rohit.jpg" alt="">
+                <a class="playername" href="https://www.cricbuzz.com/profiles/576/rohit-sharma" target="_blank">Rohit Sharma</a>
+            </div>
+    
+            <div class="player">
+                <img class="virat" src="virat.jpg" alt=""><br>
+                <a class="playername" href="https://www.cricbuzz.com/profiles/1413/virat-kohli" target="_blank">Virat Kohli</a>
+            </div>
+    
+            <div class="player">
+                <img class="dhoni" src="dhoni.jpg" alt=""><br>
+                <a class="playername" href="https://www.cricbuzz.com/profiles/265/ms-dhoni" target="_blank">MS Dhoni</a>
+            </div>
+    
+            <div class="player">
+                <img class="hardik" src="hardik.jpg" alt="">
+                <a class="playername" href="https://www.cricbuzz.com/profiles/9647/hardik-pandya" target="_blank">Hardik Mehta</a>
+            </div>
+        </div>
+
+        <h2 class="playertitle">Best Overseas Players</h2>
+        <div class="players" id="teams">
+            <div class="player">
+                <img class="warner" src="warner.jpg" alt="">
+                <a class="playername" href="https://www.cricbuzz.com/profiles/1739/david-warner" target="_blank">David Warner</a>
+            </div>
+    
+            <div class="player">
+                <img class="gayle" src="gayle.jpg" alt=""><br>
+                <a class="playername" href="https://www.cricbuzz.com/profiles/247/chris-gayle" target="_blank">Chris Gayle</a>
+            </div>
+    
+            <div class="player">
+                <img class="rabada" src="rabada.jpg" alt=""><br>
+                <a class="playername" href="https://www.cricbuzz.com/profiles/9585/kagiso-rabada" target="_blank">Kagiso Rabada</a>
+            </div>
+    
+            <div class="player">
+                <img class="morgan" src="morgan1.jpg" alt="">
+                <a class="playername" href="https://www.cricbuzz.com/profiles/624/eoin-morgan" target="_blank">Morgan</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h2>@copyrightbybhaumikpanchal</h2>
+    </footer>
+
+
+</body>
+
+</html>
